@@ -35,7 +35,11 @@ services:
     stdin_open: true
     tty: true
 
-
+    angular-service:
+      container_name: ng-docker-example
+      build: C:\Users\Karim\Desktop\Project\5TWIN2\Devops\crud-tuto-front
+      ports:
+        - "4200:80"
 
 
 
