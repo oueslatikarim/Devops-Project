@@ -7,7 +7,7 @@ services:
     ports:
       - 4200:4200 #Forwars the exposed port 4200 on the container to port 4200 on the host machine
     depends_on:
-      - devops
+      - app
   mysqldb:
     image: mysql:5.7
     restart: unless-stopped
